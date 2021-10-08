@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ANSITerminal",
+        "repositoryURL": "https://github.com/pakLebah/ANSITerminal",
+        "state": {
+          "branch": "master",
+          "revision": "95f7cf132cb08d9eebd095b09214d8a375545e01",
+          "version": null
+        }
+      },
+      {
+        "package": "Files",
+        "repositoryURL": "https://github.com/JohnSundell/Files",
+        "state": {
+          "branch": "master",
+          "revision": "d273b5b7025d386feef79ef6bad7de762e106eaf",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": null,
+          "revision": "6b2aa2748a7881eebb9f84fb10c01293e15b52ca",
+          "version": "0.5.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

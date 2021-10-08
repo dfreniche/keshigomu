@@ -7,24 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99BE6183270EED7D00A12447 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE6182270EED7D00A12447 /* main.swift */; };
+		99BE6183270EED7D00A12447 /* KeshiGomu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BE6182270EED7D00A12447 /* KeshiGomu.swift */; };
+		99BE618B270EEDC400A12447 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 99BE618A270EEDC400A12447 /* ArgumentParser */; };
+		99BE618E270EEDD300A12447 /* Files in Frameworks */ = {isa = PBXBuildFile; productRef = 99BE618D270EEDD300A12447 /* Files */; };
+		99BE618F270EEF4600A12447 /* KeshiGomu in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99BE617F270EED7D00A12447 /* KeshiGomu */; };
+		99BE6192270F002900A12447 /* ANSITerminal in Frameworks */ = {isa = PBXBuildFile; productRef = 99BE6191270F002900A12447 /* ANSITerminal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		99BE617D270EED7D00A12447 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = /usr/local/bin;
 			dstSubfolderSpec = 0;
 			files = (
+				99BE618F270EEF4600A12447 /* KeshiGomu in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		99BE617F270EED7D00A12447 /* KeshiGomu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KeshiGomu; sourceTree = BUILT_PRODUCTS_DIR; };
-		99BE6182270EED7D00A12447 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99BE6182270EED7D00A12447 /* KeshiGomu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeshiGomu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99BE618E270EEDD300A12447 /* Files in Frameworks */,
+				99BE6192270F002900A12447 /* ANSITerminal in Frameworks */,
+				99BE618B270EEDC400A12447 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +65,7 @@
 		99BE6181270EED7D00A12447 /* KeshiGomu */ = {
 			isa = PBXGroup;
 			children = (
-				99BE6182270EED7D00A12447 /* main.swift */,
+				99BE6182270EED7D00A12447 /* KeshiGomu.swift */,
 			);
 			path = KeshiGomu;
 			sourceTree = "<group>";
@@ -78,6 +86,11 @@
 			dependencies = (
 			);
 			name = KeshiGomu;
+			packageProductDependencies = (
+				99BE618A270EEDC400A12447 /* ArgumentParser */,
+				99BE618D270EEDD300A12447 /* Files */,
+				99BE6191270F002900A12447 /* ANSITerminal */,
+			);
 			productName = KeshiGomu;
 			productReference = 99BE617F270EED7D00A12447 /* KeshiGomu */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +119,11 @@
 				Base,
 			);
 			mainGroup = 99BE6176270EED7D00A12447;
+			packageReferences = (
+				99BE6189270EEDC400A12447 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				99BE618C270EEDD300A12447 /* XCRemoteSwiftPackageReference "Files" */,
+				99BE6190270F002900A12447 /* XCRemoteSwiftPackageReference "ANSITerminal" */,
+			);
 			productRefGroup = 99BE6180270EED7D00A12447 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -120,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99BE6183270EED7D00A12447 /* main.swift in Sources */,
+				99BE6183270EED7D00A12447 /* KeshiGomu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +304,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		99BE6189270EEDC400A12447 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.3;
+			};
+		};
+		99BE618C270EEDD300A12447 /* XCRemoteSwiftPackageReference "Files" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JohnSundell/Files";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		99BE6190270F002900A12447 /* XCRemoteSwiftPackageReference "ANSITerminal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pakLebah/ANSITerminal";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		99BE618A270EEDC400A12447 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99BE6189270EEDC400A12447 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		99BE618D270EEDD300A12447 /* Files */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99BE618C270EEDD300A12447 /* XCRemoteSwiftPackageReference "Files" */;
+			productName = Files;
+		};
+		99BE6191270F002900A12447 /* ANSITerminal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 99BE6190270F002900A12447 /* XCRemoteSwiftPackageReference "ANSITerminal" */;
+			productName = ANSITerminal;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99BE6177270EED7D00A12447 /* Project object */;
 }
