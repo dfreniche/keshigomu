@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		99BE617F270EED7D00A12447 /* KeshiGomu */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KeshiGomu; sourceTree = BUILT_PRODUCTS_DIR; };
 		99BE6182270EED7D00A12447 /* KeshiGomu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeshiGomu.swift; sourceTree = "<group>"; };
+		99DA1B4A27102DD90059BC9F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +50,7 @@
 		99BE6176270EED7D00A12447 = {
 			isa = PBXGroup;
 			children = (
+				99DA1B4A27102DD90059BC9F /* README.md */,
 				99BE6181270EED7D00A12447 /* KeshiGomu */,
 				99BE6180270EED7D00A12447 /* Products */,
 			);
